@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Game Forge — describe a game, play it</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Game Forge</h1>
+  <p>Describe the game you want. A Pollinations model writes it, and it runs right here — playable, remixable, shareable.</p>
+  <polli-connect app-key="pk_qdQHr6uzh4cYYw7J" budget="5" expiry="7" models="text" hide-buy-pollen></polli-connect>
+</header>
+
+<main>
+  <section class="ask">
+    <label for="idea">Your game</label>
+    <textarea id="idea" rows="3" placeholder="a tiny submarine dodging mines and collecting pearls, three lives, arrow keys"></textarea>
+    <div class="row">
+      <button id="forge" class="primary">Forge the game</button>
+      <button id="sample">Surprise me</button>
+      <button id="share" hidden>Copy share link</button>
+      <span id="status" class="status">waiting for the idea</span>
+    </div>
+  </section>
+
+  <section class="stage" id="stage" hidden>
+    <div class="frame">
+      <iframe id="game" title="the forged game" sandbox="allow-scripts allow-pointer-lock"></iframe>
+    </div>
+    <aside class="side">
+      <h2>What the model wrote</h2>
+      <p id="title" class="title"></p>
+      <p id="howto" class="howto"></p>
+      <details>
+        <summary>Source</summary>
+        <pre id="code"></pre>
+        <button id="copy" class="primary">Copy the HTML</button>
+      </details>
+      <p class="hint">Runs in a sandboxed frame with no network: everything the game needs is in its own page.</p>
+    </aside>
+  </section>
+</main>
+
+<footer>
+  <a href="https://pollinations.ai/?ref=game-forge">Pollinations</a> writes the game and runs the model; you play it.
+</footer>
+
+<script src="https://gen.pollinations.ai/connect.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
