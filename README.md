@@ -1,6 +1,6 @@
 # Game Forge
 
-[![Made with pollinations.ai](https://raw.githubusercontent.com/pollinations/pollinations/main/packages/ui/src/brand/pollinations-badge.svg)](https://pollinations.ai/?ref=badge)
+[![Made with pollinations.ai](https://raw.githubusercontent.com/pollinations/pollinations/main/packages/ui/src/brand/badge-made-with.svg)](https://pollinations.ai/?ref=badge)
 
 Describe a game in one line; a Pollinations text model writes it as a single self-contained HTML page,
 and the app drops it into a sandboxed frame so you can play it right away and share the link.
